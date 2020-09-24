@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="/resources/main.css"  rel="stylesheet" type="text/css"/>
+    <link href="contact.css"  rel="stylesheet" type="text/css"/>
+    <title>Jon Lamp's Website</title>
+</head>
+<body>
+    <nav>
+        <a href="">About</a>
+        <a href="/projects/index.html">Contact</a>
+    </nav>
+    <main>
+        <div id="title">
+            <h1>Contact Me!</h1>
+            <p>Fill out this form if you'd like to get in touch regarding a project.</p>
+        </div>
+        <form action="https://formspree.io/xyybyjyv" method="POST">
+            <div id="contact-questions">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Jon Lamp">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="youremail@geemail.com">
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="Type your message here."></textarea>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+</body>
