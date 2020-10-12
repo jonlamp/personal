@@ -253,4 +253,20 @@ svg circle {
         font-size: 1rem;
         width: 80%;
     }
+    #home-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sticky {
+        flex-direction: row !important;
+    }
+    #intro-background img{
+        position: absolute;
+        top: 0;
+        max-width: 1800px;
+        min-width: 800px;
+        scale: 150%;
+        height: 150vh;
+        left: -600px;
+    }
 }
