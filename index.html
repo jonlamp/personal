@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
     <link href="resources/main.css"  rel="stylesheet" type="text/css"/>
     <link href="personal.css" rel="stylesheet" type="text/css"/>
     <title>Jon Lamp's Website</title>
 </head>
 <body>
-    <h1>Hi, I'm Jon!</h1>
-    <p>What would you like to know?</p>
-    <nav>
-        <a href="">About</a>
-        <a href="/projects/index.html">Projects</a>
-        <a href="/contact/index.html">Contact</a>
-    </nav>
+    <div id="intro-background">
+        <img id="background" src="resources/sp2/background.png">
+        <img id="midground" src="resources/sp2/midground.png">
+    </div>
+    <section id="intro">
+        <h1>Hi, I'm Jon!</h1>
+        <p>What would you like to know?</p>
+        <div id="home-nav">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </section>
+    <section id="projects" class="parallax">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <p>Below are a few projects I've put together. Feel free to explore them!</p>
+        </div>
+        <div class="project-container">
+            <div class="project-image"><img src="/resources/uncharted-worlds.png" alt="My Uncharted Worlds Home Page"/></div>
+            <div class="project-main">
+                <h3>Uncharted Worlds Redesign</h3>
+                <a href="https://unchartedworlds.jalamp.com">See live demo</a> <br>
+                <a href="https://github.com/jonlamp/uncharted_worlds_static">Github Repository</a>
+                <p>I really like the RPG Uncharted Worlds. When I thought of pages I wanted to redesign for practice, this was one of the first that popped into my mind. If you haven't played the game before, I highly reccommend it!</p>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image"><img src="/resources/photography.png" alt="My Uncharted Worlds Home Page"/></div>
+            <div class="project-main">
+                <h3>Lamp Photography</h3>
+                <a href="https://photography.jalamp.com">See live demo</a> <br>
+                <a href="https://github.com/jonlamp/lamp-photography">Github Repository</a>
+                <p>This was the first website I created. It's a static site meant to showcase my photography! I haven't added any new pictures in a while...</p>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-image"><img src="/resources/tribute.png" alt="My Uncharted Worlds Home Page"/></div>
+            <div class="project-main">
+                <h3>Neil Rackers Tribute for Free Code Camp</h3>
+                <a href="https://tribute.jalamp.com">See live demo</a> <br>
+                <a href="https://github.com/jonlamp/fcc_tribute">Github Repository</a>
+                <p>Through the Free Code Camp Cirriculumn, you are invited to create a tribute page. I found Neil through Wikipedia's Random Article feature, and made a short tribute with the information in the article.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-header">
+            <h2>About</h2>
+        </div>
+        <div id="about-content">
+            <div id="portrait">
+                <img id="portait-img" src="resources/em_portrait.PNG" alt="A portrait of me drawn by Emily Kundrot"/>
+                <div id="caption">A portrait drawn by <a href="http://emilykundrot.science/">Emily Kundrot</a></div>
+            </div>
+            <p id="about-text">
+                I am an amatuer web developer, photographer, guitarist, tinkerer, game master, video-game-player, and all around nerd.
+                Professionally, I'm a bureaucrat who works mostly with numbers - their organization, their meaning, how to communicate them, etc. 
+                Generally, I'm a nerd who likes problem solving and aesthetics. 
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="title" class="section-header">
+            <h2>Contact Me!</h2>
+            <p>Fill out this form if you'd like to get in touch regarding a project.</p>
+        </div>
+        <div id="contact-content">
+            <form onsubmit="event.preventDefault(); sendResponse();" method="POST">
+                <div id="contact-questions">
+                    <label for="name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Jon Lamp">
+                    <label for="email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="youremail@geemail.com">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="contact-message" placeholder="Type your message here."></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <script src="resources/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>

@@ -5,3 +5,34 @@
     --acc1: #E07A5F;
     --acc2: #81B29A;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    margin: 0px;
+    font-family: "Archivo Black";
+}
+nav {
+    position: static;
+    top: 0px;
+    width: 100%;
+    background-color: var(--acc1);
+    padding: 2vh 0vw;
+}
+nav a {
+    color: var(--main-white);
+    padding: 0vh 4vw;
+    font-size: 1.25em;
+}
+nav .active {
+    color: var(--dark);
+    text-shadow: 0px 0px 7px rgba(72, 62, 92, 0.6);
+}
+main {
+    color: var(--dark);
+    padding: 2vh 5vw;
+    height: 80vh;
+}
