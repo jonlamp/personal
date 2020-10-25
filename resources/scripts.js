@@ -9,11 +9,14 @@ function scrollBehavior() {
     }
     parallaxSnow();
 }
+
 function parallaxSnow() {
     let elements = ['background','midground'];
-    for(var i = 0; i < elements.length; i++) {
-        document.getElementById(elements[i]).style.top = ((-1 * window.pageYOffset) /((elements.length-i)*2)+20) + "px";
-    }
+    //for(var i = 0; i < elements.length; i++) {
+        //document.getElementById(elements[i]).style.top = ((-1 * window.pageYOffset) /((elements.length-i)*2)+20) + "px";
+    //}
+    document.getElementById("background").style.top = ((1 * window.pageYOffset)/20) + "px";
+    document.getElementById("midground").style.top = ((-1 * window.pageYOffset)/15) + "px";
 }
 function sendResponse() {
     const contactName= document.getElementById("contact-name").value; 

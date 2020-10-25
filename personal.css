@@ -58,11 +58,11 @@ p, #home-nav{
 }
 
 #home-nav a {
-    color: var(--main-dark);
     text-decoration: none;
     transition: 0.3s ease-out;
     border-bottom: 3px solid transparent;
     font-size: 1.5em;
+    color: var(--main-white);
 }
 
 #home-nav a:hover {
@@ -81,6 +81,7 @@ p, #home-nav{
     margin-right: auto;
     z-index: 5;
     padding: 0px;
+    color: var(--main-white);
 }
 #intro-background {
     position: relative;
@@ -88,6 +89,7 @@ p, #home-nav{
     min-height: 100vh;
     width: 100%;
     margin: 0px;
+    background-color: #292139;
 }
 #intro-background img{
     position: absolute;
@@ -136,14 +138,20 @@ section img {
     top:0;
     left: 0;
     background-color: var(--main-white) !important;
-    color: var(--dark) ;
     width: 100% !important;
     margin: 0px;
     font-size: .95em !important;
 }
+.sticky a {
+    color: var(--dark)!important;
+}
 #projects {
     background: #332C41;
     color: var(--main-white);
+}
+#projects .section-header {
+    background-color: var(--acc2);
+    color: var(--dark)
 }
 .project-container:first-of-type {
     margin-bottom: 3vh;
@@ -260,7 +268,7 @@ svg circle {
     .sticky {
         flex-direction: row !important;
     }
-    #intro-background img{
+    #intro-background svg{
         position: absolute;
         top: 0;
         max-width: 1800px;
@@ -270,3 +278,11 @@ svg circle {
         left: -600px;
     }
 }
+.cls-1 {
+    fill: #af624e;
+    fill-rule: evenodd;
+  }
+  .cls-2 {
+    fill: #81b29a;
+    fill-rule: evenodd;
+  }
