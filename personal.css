@@ -43,7 +43,7 @@ h3{
     font-size: 2em;
 }
 p, #home-nav{
-    font-size: 1.15em;
+    font-size: 20px;
     align-self: center;
 }
 
@@ -130,7 +130,7 @@ section img {
     background-color: var(--dark);
     color: var(--main-white);
     margin: -5vh -5vw 0vh -5vw !important;
-    padding: 5vh 5vw 2vh 5vw;
+    padding: 3vh 5vw 3vh 15vw;
     box-shadow: -3px 0px 10px rgba(20,20,20,.7);
 }
 .sticky {
@@ -159,7 +159,7 @@ section img {
 .project-container {
     display: flex;
     align-content: center;
-    padding: 2vh 2vw;
+    padding: 3vh 10vw;
 }
 .project-container div:first-child {
     align-self: center;
@@ -169,16 +169,17 @@ section img {
    display: flex;
    flex-direction: column;
    padding: 3vh 3vw;
-   line-height: 1.5em;
+   line-height: 30px;
    flex-grow: 2;
 }
 .project-main h3 {
     text-align: left;
+    padding: 2vh 0vw;
 }
 
 #about-content {
     display:flex;
-    padding: 2vh 2vw;
+    padding: 2vh 10vw;
     min-height: 50vh;
     align-items: center;
 }
@@ -186,12 +187,15 @@ section img {
     border-radius: 40px;
 }
 #about p {
-    line-height: 1.5em;
+    line-height: 50px;
     padding: 0vh 2vw;
 }
 #caption {
     font-size: 0.75em;
     text-align: center;
+}
+#contact-content {
+    padding: 2vh 10vw;
 }
 #contact-questions label {
     display: block;
