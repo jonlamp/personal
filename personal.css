@@ -255,11 +255,17 @@ svg circle {
     h3{
         font-size: 1.5em;
     }
+    p {
+        font-size: 1rem;
+    }
     .project-container {
         flex-wrap: wrap;
     }
     .project-container img {
         min-width: 80vw;
+    }
+    .project-main {
+        line-height: 40px;
     }
     #contact-questions input, #contact-questions textarea {
         font-size: 1rem;
@@ -280,6 +286,9 @@ svg circle {
         scale: 150%;
         height: 150vh;
         left: -600px;
+    }
+    #about-content {
+        flex-direction: column;
     }
 }
 .cls-1 {
